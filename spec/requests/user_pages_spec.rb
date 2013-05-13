@@ -37,7 +37,8 @@ describe "signup page" do
 
         it {should have_selector('title', text: user.name) }
         it { should have_selector('div.alert.alert-success', text: 'Welcome') }
-        end
+       it { should have_link('Sign out')}
+       end
     end
 #  it {should have_selector('h1', text: 'Sign up')}
  # it {should have_selector('title', text: full_title('Sign up'))}
